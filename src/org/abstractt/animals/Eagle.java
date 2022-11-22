@@ -24,6 +24,12 @@ public class Eagle extends Animal implements IVolante {
 		System.out.println("the eagle eats: jackrabbits, rabbits, small animals ");
 		
 	}
+
+	@Override
+	public void fly() {
+		System.out.println("i am flying!!!");
+		
+	}
 	
 	
 

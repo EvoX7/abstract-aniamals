@@ -24,6 +24,12 @@ public class Dolphin extends Animal implements INuotante{
 		System.out.println("the dolphin eats: variety of fishes, squids, and crustaceans such as shrimps");
 		
 	}
+
+	@Override
+	public void swim() {
+		System.out.println("i am swimming!!");
+		
+	}
 	
 	
 

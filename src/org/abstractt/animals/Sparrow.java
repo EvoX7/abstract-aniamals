@@ -25,4 +25,10 @@ public class Sparrow extends Animal implements IVolante {
 
 	}
 
+	@Override
+	public void fly() {
+		System.out.println("i am flying!!!");
+		
+	}
+
 }

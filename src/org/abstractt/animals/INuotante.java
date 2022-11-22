@@ -1,5 +1,5 @@
 package org.abstractt.animals;
 
 public interface INuotante {
-	public void fly();
+	public void swim();
 }
