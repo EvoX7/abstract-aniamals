@@ -7,8 +7,8 @@ public class Boss extends Person {
 	private int salary;
 	private int bonus;
 
-	public Boss(String name, String lastname, LocalDate dob, String companyCode, int salary, int bonus) {
-		super(name, lastname, dob, companyCode);
+	public Boss(String name, String lastname, LocalDate dob, int salary, int bonus) {
+		super(name, lastname, dob);
 
 		setSalary(salary);
 		setBonus(bonus);
@@ -18,7 +18,7 @@ public class Boss extends Person {
 	@Override
 	public int getYearIncome() {
 
-		return salary * 12 + bonus;
+		return getSalary() * 12 + getBonus();
 	}
 
 	public int getSalary() {
@@ -36,11 +36,13 @@ public class Boss extends Person {
 	public void setBonus(int bonus) {
 		this.bonus = bonus;
 	}
+	
 
 	@Override
 	public String toString() {
 
-		return super.toString() + "\nsalary: " + getSalary() + "\nyear bonus: " + getBonus() + "\nyear Income: " + getYearIncome();
+		return super.toString() + "\nsalary: " + getSalary() + "\nyear bonus: " + getBonus() + "\nyear Income: "
+				+ getYearIncome();
 
 	}
 }

@@ -7,8 +7,8 @@ public class Employee extends Person {
 	private int salary;
 	private int monthlyCount;
 
-	public Employee(String name, String lastname, LocalDate dob, String companyCode, int salary, int monthlyCount) {
-		super(name, lastname, dob, companyCode);
+	public Employee(String name, String lastname, LocalDate dob, int salary, int monthlyCount) {
+		super(name, lastname, dob);
 
 		setMonthlyCount(monthlyCount);
 		setSalary(salary);
@@ -18,7 +18,7 @@ public class Employee extends Person {
 	@Override
 	public int getYearIncome() {
 
-		return salary * monthlyCount;
+		return getSalary() * getMonthlyCount();
 	}
 
 	public int getSalary() {

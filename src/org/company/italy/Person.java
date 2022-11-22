@@ -4,15 +4,15 @@ import java.time.LocalDate;
 import java.util.Random;
 
 public abstract class Person {
-	
-	public abstract  int getYearIncome();
 
 	private String name;
 	private String lastName;
 	private LocalDate dob;
 	private String companyCode;
 
-	public Person(String name, String lastname, LocalDate dob, String companyCode) {
+	public abstract int getYearIncome();
+
+	public Person(String name, String lastName, LocalDate dob) {
 
 	}
 
@@ -24,11 +24,11 @@ public abstract class Person {
 		this.name = name;
 	}
 
-	public String getlastName() {
+	public String getLastName() {
 		return lastName;
 	}
 
-	public void setlastName(String lastName) {
+	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
 
@@ -40,23 +40,25 @@ public abstract class Person {
 		this.dob = dob;
 	}
 
-	public String getCompanyCode() {
-		return companyCode;
+	public void getCompanyCode() {
+		Random rnd = new Random();
+		int rndValue = rnd.nextInt(95324, 1245869);
+		String value = String.valueOf(rndValue);
 	}
 
-	public void setCompanyCode( String companyCode) {
+	public void setCompanyCode(String companyCode) {
 		this.companyCode = companyCode;
 	}
-	
+
 	public String getFullName() {
 		return name + lastName + companyCode;
+
 	}
 
 	@Override
 	public String toString() {
 
-		return "company code: " + getCompanyCode() + "\nname: " + getName() + "\nlastname: " + getlastName() + "\ndate of birth: "
-				+ dob + getFullName();
+		return getFullName() + "date of birth: " + getDob();
 	}
 
 }
