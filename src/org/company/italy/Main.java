@@ -26,6 +26,8 @@ public class Main {
 		Person[] company = { boss1, boss2, employee1, employee2, employee3 };
 		Person[] bossMax = { boss1, boss2 };
 		Person[] employeeMin = { employee1, employee2, employee3 };
+		
+		
 
 //		Calculate the max annual income in the company
 		int maxYearIncome = Integer.MIN_VALUE;
@@ -61,10 +63,11 @@ public class Main {
 			}
 
 		}
-		System.out.println("\nMax annual income in the company: \n" + maxYearIncomePerPerson);
+		
+		System.out.println("Max annual income in the company: \n" + maxYearIncomePerPerson);
 		System.out.println("\nLowest annual income in the company: \n" + minYearIncomePerPerson);
 
-//	      Calculate bosses max annual year income income in the company
+//	      Calculate bosses max annual year income in the company
 
 		int maxYearIncome2 = Integer.MIN_VALUE;
 
@@ -81,9 +84,10 @@ public class Main {
 				maxYearIncomeAmongBosses = person;
 			}
 		}
-		System.out.println("\nMax annual income among Bosses: \n" + maxYearIncomeAmongBosses);
+		System.out.println("\n------------------------------------");
+		System.out.println("Max annual income among Bosses: \n" + maxYearIncomeAmongBosses);
 
-//		Calculate the min annual income in the company
+//		Calculate the Employees' min annual income in the company
 
 		int minYearIncome2 = Integer.MAX_VALUE;
 
