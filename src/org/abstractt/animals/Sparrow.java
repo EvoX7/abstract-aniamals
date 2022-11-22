@@ -1,23 +1,28 @@
 package org.abstractt.animals;
 
-//public class Sparrow extends Animal {
+public class Sparrow extends Animal {
 
-//	@Override
-//	public void sleep() {
-//		// TODO Auto-generated method stub
-//
-//	}
-//
-//	@Override
-//	public void verse() {
-//		// TODO Auto-generated method stub
-//
-//	}
-//
-//	@Override
-//	public void eat() {
-//		// TODO Auto-generated method stub
-//
-//	}
+	public Sparrow(String name) {
+		super(name);
+		
+	}
 
+	@Override
+	public void sleep() {
+		System.out.println("sleeps:ZzZ");
 
+	}
+
+	@Override
+	public void verse() {
+		System.out.println("the sparrow: tweets");
+
+	}
+
+	@Override
+	public void eat() {
+		System.out.println("the sparrow eats: corn, oats, wheat");
+
+	}
+
+}
