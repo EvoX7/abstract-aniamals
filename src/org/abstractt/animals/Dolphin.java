@@ -27,7 +27,7 @@ public class Dolphin extends Animal implements INuotante{
 
 	@Override
 	public void swim() {
-		System.out.println("i am swimming!!");
+		System.out.println("\nI am swimming!!");
 		
 	}
 	

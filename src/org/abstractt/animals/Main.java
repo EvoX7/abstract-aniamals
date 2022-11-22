@@ -17,6 +17,7 @@ public class Main {
 		eagle.sleep();
 		eagle.verse();
 		eagle.eat();
+		eagle.fly();
 		
 		System.out.println("\n----------------------------");
 		
@@ -25,6 +26,7 @@ public class Main {
 		sparrow.sleep();
 		sparrow.verse();
 		sparrow.eat();
+		sparrow.fly();
 		System.out.println("\n----------------------------");
 		
 		System.out.println("\nDolphins: \n");
@@ -32,6 +34,7 @@ public class Main {
 		dolphin.sleep();
 		dolphin.verse();
 		dolphin.eat();
+		dolphin.swim();
 		System.out.println("\n----------------------------");
 	}
 
