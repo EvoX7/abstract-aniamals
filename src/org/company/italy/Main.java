@@ -28,7 +28,6 @@ public class Main {
 		Person[] employeeMin = { employee1, employee2, employee3 };
 
 //		Calculate the max annual income in the company
-
 		int maxYearIncome = Integer.MIN_VALUE;
 
 		Person maxYearIncomePerPerson = null;
@@ -46,7 +45,6 @@ public class Main {
 		}
 
 //			Calculate the min annual income in the company
-
 		int minYearIncome = Integer.MAX_VALUE;
 
 		Person minYearIncomePerPerson = null;
@@ -78,34 +76,32 @@ public class Main {
 
 			int yearIncome = person.getYearIncome();
 
-			if (maxYearIncome < yearIncome) {
-				maxYearIncome = yearIncome;
+			if (maxYearIncome2 < yearIncome) {
+				maxYearIncome2 = yearIncome;
 				maxYearIncomeAmongBosses = person;
 			}
 		}
 		System.out.println("\nMax annual income among Bosses: \n" + maxYearIncomeAmongBosses);
-		
 
 //		Calculate the min annual income in the company
 
-	int minYearIncome2 = Integer.MAX_VALUE;
+		int minYearIncome2 = Integer.MAX_VALUE;
 
-	Person minYearIncomeEmployees = null;
+		Person minYearIncomeEmployees = null;
 
-	for (int x = 0; x < employeeMin.length; x++) {
+		for (int x = 0; x < employeeMin.length; x++) {
 
-		Person person = employeeMin[x];
+			Person person = employeeMin[x];
 
-		int yearIncome = person.getYearIncome();
+			int yearIncome = person.getYearIncome();
 
-		if (minYearIncome > yearIncome) {
-			minYearIncome = yearIncome;
-			minYearIncomeEmployees  = person;
+			if (minYearIncome2 > yearIncome) {
+				minYearIncome2 = yearIncome;
+				minYearIncomeEmployees = person;
+			}
+
 		}
+		System.out.println("\nMin annual income among Employees: \n" + minYearIncomeEmployees);
 
-	}
-	System.out.println("\nMin annual income among Employees: \n" + minYearIncomeEmployees );
-
-		
 	}
 }
