@@ -5,7 +5,7 @@ import java.util.Random;
 
 public abstract class Person {
 	
-	public abstract int getYearIncome();
+	public abstract  int getYearIncome();
 
 	private String name;
 	private String lastName;
