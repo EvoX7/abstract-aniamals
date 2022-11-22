@@ -1,6 +1,6 @@
 package org.abstractt.animals;
 
-public class Dolphin extends Animal {
+public class Dolphin extends Animal implements INuotante{
 
 	public Dolphin(String name) {
 		super(name);
@@ -15,13 +15,13 @@ public class Dolphin extends Animal {
 
 	@Override
 	public void verse() {
-		System.out.println("the dolphin whistles");
+		System.out.println("the dolphin: whistles");
 		
 	}
 
 	@Override
 	public void eat() {
-		System.out.println("the dolphin eats: variety of fishes, squids, and crustaceans such as shrimps.");
+		System.out.println("the dolphin eats: variety of fishes, squids, and crustaceans such as shrimps");
 		
 	}
 	

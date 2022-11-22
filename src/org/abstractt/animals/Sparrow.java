@@ -1,6 +1,6 @@
 package org.abstractt.animals;
 
-public class Sparrow extends Animal {
+public class Sparrow extends Animal implements IVolante {
 
 	public Sparrow(String name) {
 		super(name);

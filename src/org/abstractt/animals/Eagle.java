@@ -1,6 +1,6 @@
 package org.abstractt.animals;
 
-public class Eagle extends Animal {
+public class Eagle extends Animal implements IVolante {
 
 	public Eagle(String name) {
 		super(name);
@@ -15,7 +15,7 @@ public class Eagle extends Animal {
 
 	@Override
 	public void verse() {
-		System.out.println("the eagle squawks");
+		System.out.println("the eagle: squawks");
 		
 	}
 

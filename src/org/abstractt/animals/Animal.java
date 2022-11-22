@@ -10,7 +10,7 @@ public abstract class Animal {
 	public abstract void eat();
 	
 	
-	protected static String name;
+	protected String name;
 	
 	
 	public Animal (String name) {
