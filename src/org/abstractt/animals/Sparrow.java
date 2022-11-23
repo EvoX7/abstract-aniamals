@@ -4,12 +4,6 @@ public class Sparrow extends Animal implements IVolante {
 
 	public Sparrow(String name) {
 		super(name);
-		
-	}
-
-	@Override
-	public void sleep() {
-		System.out.println("sleeps:ZzZ");
 
 	}
 
@@ -28,7 +22,7 @@ public class Sparrow extends Animal implements IVolante {
 	@Override
 	public void fly() {
 		System.out.println("\nI am flying!!!");
-		
+
 	}
 
 }
